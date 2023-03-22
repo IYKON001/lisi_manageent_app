@@ -1,0 +1,109 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>Cover Template · Bootstrap v4.6</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/cover/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="thirdparties/bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+<meta name="msapplication-config" content="/docs/4.6/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+    
+ <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <h2 class="masthead-brand">LIST MANAGEMENT APP</h2>
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link active" href="#" onclick="loadContent(event, 'home')">Home</a>
+        <a class="nav-link" href="./contents/list.html" >Add-To-List</a>
+        <!-- <a class="nav-link" href="#" onclick="loadContent(event, 'list')">Add-To-List</a> -->
+        <a class="nav-link" href="#" onclick="loadContent(event, 'contact')">Contact</a>
+      </nav>
+    </div>
+  </header>
+  
+
+  <div style="text-align:left;">
+    <h4>ADD TO LIST</h4>
+    <hr>
+    <form id="form"class="form" method="POST">
+
+        <div class="form-group" id="listers">
+            <label>WHATS ON THE LIST TODAY...</label>
+            <input type="text" class="form-control" id="input" placeholder="ADD TO LIST">
+        </div>
+
+        <div class="form-group" id="category">
+            <label>ADD CATEGORY</label>
+           <!-- <input id="cat"  placeholder="ADD A CATEGORY" class="form-control"></input> -->
+           <select name="" id="cat2">
+            <option selected disabled>select option</option>
+            <option value="business">business</option>
+            <option value="work">work</option>
+            <option value="programming">programming</option>
+            <option value="schoolng">scholing</option>
+            <option value="gaming">gaming</option>
+            <option value="holliday">holliday</option>
+          </select>
+        </div>
+
+
+        <div id="form" class="form-group">
+            <!-- <button onclick="newElement(), newCategory()" type="button"  class="btn btn-lg btn-danger form">ADD TO LIST</button> -->
+            <button onclick="newElement()" type="button"  class="btn btn-lg btn-danger form ">ADD TO LIST</button>
+         
+        </div>
+
+
+    </form>
+    <!-- <script src="../js/script.js"></script> -->
+</div>
+
+
+  <footer class="mastfoot mt-auto">
+    <div class="inner">
+    
+    </div>
+  </footer>
+</div>
+
+
+    <script src="thirdparties/jquery/jquery.min.js"></script>
+    <script src="thirdparties/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
